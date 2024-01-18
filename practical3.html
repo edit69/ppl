@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="myAlertBox()">Alert Box</button>
+    <button onclick="myConfirmBox()">Confirm Box</button>
+    <button onclick="myPromptBox()">Prompt Box</button>
+    <script>
+        function myAlertBox()
+        {
+            alert("This is alert Box");
+        }
+
+        function myConfirmBox()
+        {
+            var i = confirm("click Ok or Cancel");
+
+            if(i==true)
+            {
+                document.write("you click on OK")
+            }
+            else
+            {
+                document.write("You click on cancel")
+            }
+        }
+
+        function myPromptBox()
+        {
+            var name = prompt("Enter your name");
+
+            if(name)
+            document.write("Hello "+name)
+        }
+    </script>
+</body>
+</html>
